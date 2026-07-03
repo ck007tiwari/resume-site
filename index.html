@@ -75,8 +75,19 @@
 
   @media print {
     .cta-row { display: none; }
-    body { font-size: 12px; }
-    .wrap { padding: 20px; }
+    html { font-size: 12.5px; }
+    body { font-size: 11px; line-height: 1.4; }
+    .wrap { padding: 8px 6px; }
+    header.hero { margin-bottom: 18px; }
+    header.hero h1 { font-size: 1.6rem; }
+    section { margin-top: 18px; }
+    h2.section-title { margin-bottom: 10px; padding-bottom: 5px; }
+    .job { margin-bottom: 14px; }
+    ul.bullets li { margin-bottom: 3px; font-size: 0.88rem; }
+    .skills-grid { gap: 4px; }
+    .skill-row .skill-cat, .skill-row .skill-items { font-size: 0.85rem; }
+    .job-title { margin: 1px 0 4px; }
+    footer { margin-top: 20px; }
   }
 </style>
 </head>
@@ -99,17 +110,17 @@
 
   <section>
     <h2 class="section-title">Professional Summary</h2>
-    <p class="summary">Results-driven Senior Software Engineer &amp; Frontend Lead with 5+ years of experience architecting high-performance, scalable web and mobile applications. Specialized in React.js, Next.js, TypeScript, and React Native, with a proven track record integrating 3,000+ APIs, leading full-cycle product development, and driving measurable improvements in code quality and performance. Skilled in cross-functional collaboration, architectural refactoring, and mentoring engineers to accelerate team velocity.</p>
+    <p class="summary">Results-driven Senior Software Engineer &amp; Frontend Lead with 5+ years of experience architecting high-performance, scalable web and mobile applications. Specialized in React.js, Next.js, TypeScript, and React Native, with a proven track record integrating 3,000+ APIs, leading large-scale legacy modernizations (React 18 / MUI migrations), and driving measurable improvements in code quality and performance. Full-stack capable with Python (FastAPI) and PostgreSQL. Skilled in cross-functional collaboration, architectural refactoring, and mentoring engineers to accelerate team velocity.</p>
   </section>
 
   <section>
     <h2 class="section-title">Core Competencies &amp; Technical Skills</h2>
     <div class="skills-grid">
-      <div class="skill-row"><span class="skill-cat">Frontend</span><span class="skill-items">React.js, React Native, Next.js, JavaScript (ES6+), TypeScript, React Hooks, HTML5, CSS3, SCSS, Bootstrap, Tailwind CSS, Material-UI (MUI)</span></div>
-      <div class="skill-row"><span class="skill-cat">State &amp; Data</span><span class="skill-items">Redux Toolkit, Zustand, TanStack Query (React Query), WebSockets, RESTful APIs</span></div>
-      <div class="skill-row"><span class="skill-cat">Backend &amp; Cloud</span><span class="skill-items">Node.js, Express.js, Python, MongoDB, AWS, Docker</span></div>
-      <div class="skill-row"><span class="skill-cat">Tools &amp; Dev Quality</span><span class="skill-items">Git, SonarQube, Figma, D3.js, Chart.js, Formik, React Hook Form, Yup, Unit Testing</span></div>
-      <div class="skill-row"><span class="skill-cat">Methodologies</span><span class="skill-items">Agile/Scrum, Team Leadership, Atomic Design (Design Systems), UAT Management</span></div>
+      <div class="skill-row"><span class="skill-cat">Frontend</span><span class="skill-items">React.js, React Native, Next.js, JavaScript (ES6+), TypeScript, Vite, React Hooks, HTML5, CSS3, SCSS, Bootstrap, Tailwind CSS, Material-UI (MUI), Radix UI / shadcn-ui, Ant Design</span></div>
+      <div class="skill-row"><span class="skill-cat">State &amp; Data</span><span class="skill-items">Redux Toolkit, RTK Query, Zustand, TanStack Query (React Query), TanStack Table, WebSockets, RESTful APIs</span></div>
+      <div class="skill-row"><span class="skill-cat">Backend &amp; Cloud</span><span class="skill-items">Node.js, Express.js, Python, FastAPI, PostgreSQL, MongoDB, Supabase, AWS, Docker</span></div>
+      <div class="skill-row"><span class="skill-cat">Tools &amp; Dev Quality</span><span class="skill-items">Git, SonarQube, Sentry (Error Monitoring &amp; Observability), Figma, D3.js, Chart.js, Formik, React Hook Form, Yup, Vitest, Unit Testing</span></div>
+      <div class="skill-row"><span class="skill-cat">Methodologies</span><span class="skill-items">Agile/Scrum, Team Leadership, Legacy Modernization &amp; Framework Migrations, Atomic Design (Design Systems), UAT Management</span></div>
     </div>
   </section>
 
@@ -130,6 +141,10 @@
         <li><b>Mentorship &amp; Scaling:</b> Onboarded junior developers and cross-trained a Java developer to React proficiency within 10 days.</li>
         <li><b>UI/UX Transformation:</b> Executed a full-scale UI overhaul using Atomic Design patterns, translating Figma specs into a reusable component library.</li>
         <li><b>Release Management:</b> Orchestrated monthly release cycles and UAT integrations, maintaining ~60 commits per month.</li>
+        <li><b>Legacy Modernization (Rail Operations Platform):</b> Driving the React 18 + MUI v9 upgrade of a 5-year-old enterprise rail stock &amp; crew-planning platform (12,500+ PRs) — migrated legacy Material-UI/JSS styling across hundreds of components, coordinated upgrade branches for 6+ functional modules, and authored the platform's Software Design Specification.</li>
+        <li><b>Product Delivery (Transport Status App):</b> Primary engineer (95% of commits) on a real-time London transport status application built on TfL Open Data — React 18, TypeScript, Vite, Tailwind CSS, Radix UI/shadcn, Supabase, and TanStack Query — with live arrivals/departures boards and service-disruption views; authored the client-facing API documentation.</li>
+        <li><b>Backend Engineering:</b> Built a Python FastAPI service connecting three PostgreSQL databases with async SQLAlchemy, featuring cross-database joins, an EXPLAIN ANALYZE–driven index-recommendation engine, and auto-generated schema documentation with change detection.</li>
+        <li><b>Observability:</b> Introduced Sentry error monitoring across React applications — source-map uploads via the Vite plugin, release tracking, and alert-rule design — validated through dedicated POC apps ahead of production rollout.</li>
       </ul>
     </div>
 
